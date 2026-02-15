@@ -1,16 +1,6 @@
 {
   "artworks": [
     {
-      "id": 2,
-      "title": "New Fun Creation",
-      "category": "Digital Art",
-      "theme": "Digital Art",
-      "src": "",
-      "likes": 0,
-      "stickers": [],
-      "dateUploaded": "2026-02-15"
-    },
-    {
       "id": 1,
       "title": "Face",
       "category": "Digital Art",
