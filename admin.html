@@ -234,6 +234,12 @@
                 saveChanges({ ...db, stickers: [...db.stickers, base64] });
             };
 
+            const replaceSticker = (idx, base64) => {
+                const newStickers = [...db.stickers];
+                newStickers[idx] = base64;
+                saveChanges({ ...db, stickers: newStickers });
+            };
+
             const removeSticker = (idx) => {
                 saveChanges({ ...db, stickers: db.stickers.filter((_, i) => i !== idx) });
             };
@@ -352,9 +358,17 @@
                                         <Card title="Sticker Manager" subtitle="Create your own custom stickers for drawings">
                                             <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-6 mb-8">
                                                 {db.stickers.map((s, i) => (
-                                                    <div key={i} className="aspect-square bg-gray-50 rounded-2xl border-2 border-gray-100 flex flex-col items-center justify-center p-2 relative group">
+                                                    <div key={i} className="aspect-square bg-gray-50 rounded-2xl border-2 border-gray-100 flex flex-col items-center justify-center p-2 relative group overflow-hidden">
                                                         {s.startsWith('data:image') ? <img src={s} className="max-w-full max-h-[80%] object-contain" /> : <span className="text-4xl">{s}</span>}
-                                                        <button onClick={() => removeSticker(i)} className="absolute -top-2 -right-2 bg-red-500 text-white w-6 h-6 rounded-full text-xs font-bold shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">×</button>
+
+                                                        {/* Actions Overlay */}
+                                                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center gap-2">
+                                                            <div className="relative">
+                                                                <Button variant="secondary" className="px-2 py-1 text-[10px] shadow-none">Replace</Button>
+                                                                <input type="file" className="absolute inset-0 opacity-0 cursor-pointer" onChange={e => handleFileUpload(e, (b) => replaceSticker(i, b))} />
+                                                            </div>
+                                                            <button onClick={() => removeSticker(i)} className="text-white bg-red-500 rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold shadow-lg hover:bg-red-600">×</button>
+                                                        </div>
                                                     </div>
                                                 ))}
                                                 <div className="aspect-square border-2 border-dashed border-pink-300 rounded-2xl flex items-center justify-center relative hover:bg-pink-50 transition-colors">
@@ -381,7 +395,7 @@
                                 )}
                             </section>
                         </div>
-                    </main>
+                    </main >
 
                     {loading && (
                         <div className="fixed inset-0 bg-white/60 backdrop-blur-sm z-[100] flex flex-col items-center justify-center">
@@ -389,7 +403,7 @@
                             <p className="text-pink-600 font-bold text-xl">UPDATING GALAXY... 🌌</p>
                         </div>
                     )}
-                </div>
+                </div >
             );
         };
 
