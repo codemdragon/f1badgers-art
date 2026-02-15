@@ -1,0 +1,70 @@
+{
+  "artworks": [
+    {
+      "id": 1,
+      "title": "Super Speed Racer",
+      "category": "Digital Art",
+      "theme": "Speed",
+      "src": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&q=80&w=800",
+      "likes": 142,
+      "stickers": ["🔥", "🏎️"],
+      "dateUploaded": "2023-10-01"
+    },
+    {
+      "id": 2,
+      "title": "The Galaxy Fox",
+      "category": "Drawing",
+      "theme": "Animals",
+      "src": "https://images.unsplash.com/photo-1615184697985-c9bde1b07da7?auto=format&fit=crop&q=80&w=800",
+      "likes": 89,
+      "stickers": ["⭐"],
+      "dateUploaded": "2023-10-05"
+    },
+    {
+      "id": 3,
+      "title": "Tiny Donut Shop",
+      "category": "Airclay",
+      "theme": "Food",
+      "src": "https://images.unsplash.com/photo-1516746924754-07d498dc7168?auto=format&fit=crop&q=80&w=800",
+      "likes": 215,
+      "stickers": ["🍩", "✨", "❤️"],
+      "dateUploaded": "2023-10-10"
+    },
+    {
+      "id": 4,
+      "title": "Dragon Fold",
+      "category": "Origami",
+      "theme": "Cool Stuff",
+      "src": "https://images.unsplash.com/photo-1588611910609-8472fa1d50c6?auto=format&fit=crop&q=80&w=800",
+      "likes": 67,
+      "stickers": ["🐉"],
+      "dateUploaded": "2023-10-15"
+    },
+    {
+      "id": 5,
+      "title": "Neon City",
+      "category": "Digital Art",
+      "theme": "Cool Stuff",
+      "src": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=800",
+      "likes": 156,
+      "stickers": ["⚡", "✨"],
+      "dateUploaded": "2023-10-20"
+    },
+    {
+      "id": 6,
+      "title": "Forest Spirit",
+      "category": "Airclay",
+      "theme": "Animals",
+      "src": "https://images.unsplash.com/photo-1515405295579-ba7b45403062?auto=format&fit=crop&q=80&w=800",
+      "likes": 92,
+      "stickers": ["🌿"],
+      "dateUploaded": "2023-10-25"
+    }
+  ],
+  "categories": ["All", "Animals", "Speed", "Food", "Cool Stuff"],
+  "stickers": ["❤️", "✨", "🔥", "⭐", "🏎️", "🍩", "🐉", "😎"],
+  "siteSettings": {
+    "logo": null,
+    "title": "F1Badgers Art"
+  }
+}
