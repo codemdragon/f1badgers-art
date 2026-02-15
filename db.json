@@ -1,20 +1,6 @@
 {
   "artworks": [
     {
-      "id": 3,
-      "title": "Tiny Donut Shop",
-      "category": "Airclay",
-      "theme": "Food",
-      "src": "https://images.unsplash.com/photo-1516746924754-07d498dc7168?auto=format&fit=crop&q=80&w=800",
-      "likes": 215,
-      "stickers": [
-        "🍩",
-        "✨",
-        "❤️"
-      ],
-      "dateUploaded": "2023-10-10"
-    },
-    {
       "id": 4,
       "title": "Dragon Fold",
       "category": "Origami",
