@@ -1,18 +1,6 @@
 {
   "artworks": [
     {
-      "id": 4,
-      "title": "Dragon Fold",
-      "category": "Origami",
-      "theme": "Cool Stuff",
-      "src": "https://images.unsplash.com/photo-1588611910609-8472fa1d50c6?auto=format&fit=crop&q=80&w=800",
-      "likes": 67,
-      "stickers": [
-        "🐉"
-      ],
-      "dateUploaded": "2023-10-15"
-    },
-    {
       "id": 5,
       "title": "Neon City",
       "category": "Digital Art",
