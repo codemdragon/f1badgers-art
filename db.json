@@ -1,19 +1,6 @@
 {
   "artworks": [
     {
-      "id": 5,
-      "title": "Neon City",
-      "category": "Digital Art",
-      "theme": "Cool Stuff",
-      "src": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=800",
-      "likes": 156,
-      "stickers": [
-        "⚡",
-        "✨"
-      ],
-      "dateUploaded": "2023-10-20"
-    },
-    {
       "id": 6,
       "title": "Forest Spirit",
       "category": "Airclay",
