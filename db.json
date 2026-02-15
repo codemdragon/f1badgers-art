@@ -1,5 +1,16 @@
 {
-  "artworks": [],
+  "artworks": [
+    {
+      "id": 1,
+      "title": "New Fun Creation",
+      "category": "Digital Art",
+      "theme": "Digital Art",
+      "src": "",
+      "likes": 0,
+      "stickers": [],
+      "dateUploaded": "2026-02-15"
+    }
+  ],
   "categories": [
     "All",
     "Digital Art"
